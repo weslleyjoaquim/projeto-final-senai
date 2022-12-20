@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Landing Page - Senai</title>
+</head>
+<body>
+    <!--Barra de navegação-->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">SENAI</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#">Home</a></li>
+                <li class="nav-item"><a href="#cursos">Cursos</a></li>
+                <li class="nav-item"><a href="#unidades-card">Unidades</a></li>
+                <li class="nav-item"><a href="#contato">Contato</a></li>
+                
+            </ul>
+            <div class="menu"><!--Criando o menu de Hamburguer-->
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="home-text">
+                <h4 class="text-h4">Bem vindo ao Senai</h4>
+                <h1 class="text-h1">Venha construir o seu futuro.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#cursos" class="home-btn">Cursos</a>
+            </div>
+            <div class="home-image">
+                <img src="img/estudante.jpg" alt="foto de um estudande do senai">
+            </div>
+        </section>
+    </main>
+    <!--Cards das unidades-->
+    <div class="unidades-card" id="unidades-card">
+        <div class="card">
+          <h2>Senai Gama</h2>
+          <p>Endereço: Área Especial Entrequadras 2 e 8 Setor Sul - Gama/DF - CEP 72415-116</p>
+          <img class="image" src="img/senaiGama.jpg" alt="Senai Gama" />
+        </div>
+           <div class="card">
+          <h2>Senai Brasilia</h2>
+          <p>SIA Trecho 3, Lote 225 Ed. Sede Senai
+            Brasília - DF - CEP: 71200-030</p>
+          <img class="image" src="img/senaiBrasilia.jpg" alt="Senai Brasilia" />
+        </div>
+           <div class="card">
+          <h2>Senai Taguatinga</h2>
+          <p>Endereço: Área Especial nº 2 - Setor "C" Norte - Taguatinga/DF - CEP: 72115-700</p>
+          <img class="image" src="img/SenaiTaguatiga.jpg" alt="Senai Taguatinga" />
+        </div>
+    </div>
+<!--Pesquisa de cursos-->
+    <h2 class="t-h2" id="cursos">Cursos oferecidos pelo SENAI</h2>
+    <section class="container">
+        <form class="search-form">
+            <input type="text" name="" id="search-item" placeholder="Procure seu curso" onkeyup="procurar()">
+        </form>    
+        <div class="lista-produtos">
+            <div class="produtos">
+                <img src="img/desenvolvimento.webp" alt="imagem de códigos">
+                <div class="p-details">
+                    <h2>Desenvolvimento Web</h2>
+                    <h3>R$1500</h3>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="img/DJ.webp" alt="imagem de um dj">
+                <div class="p-details">
+                    <h2>Curso de DJ</h2>
+                    <h3>R$150</h3>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="img/eletrica.jpg" alt="imagem eletricista">
+                <div class="p-details">
+                    <h2>Eletricista</h2>
+                    <h3>R$230</h3>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="img/engenharia.jpg" alt="imagem engenheiro">
+                <div class="p-details">
+                    <h2>Engenharia Civil</h2>
+                    <h3>R$1500</h3>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="img/marcenaria.webp" alt="imagem de marcenaira">
+                <div class="p-details">
+                    <h2>Curso de Marcenaria</h2>
+                    <h3>R$500</h3>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="img/pedreiro.webp" alt="imagem pedreiro">
+                <div class="p-details">
+                    <h2>Pedreiro</h2>
+                    <h3>R$600</h3>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="img/quimica.jpg" alt="imagem quimica">
+                <div class="p-details">
+                    <h2>Curso de Química</h2>
+                    <h3>R$700</h3>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="img/redes.jpg" alt="imagem adm de redes">
+                <div class="p-details">
+                    <h2>Administrador de Redes</h2>
+                    <h3>R$1000</h3>
+                </div>
+            </div>
+            <div class="produtos">
+                <img src="img/soldador.jpg" alt="imagem soldador">
+                <div class="p-details">
+                    <h2>Curso de Soldador</h2>
+                    <h3>R$800</h3>
+                </div>
+            </div>
+        </div>
+</section>
+<!--Seção de contatos-->
+<div class="contatos" id="contato">
+    <h2 class="t-h2">Contatos</h2>
+    <div>
+        <p>Unidade do Gama: (61) 3353-8700</p>
+    </div>
+    <div>
+        <p>Unidade de Brasilia: (61) 3353-8700</p>
+    </div>
+    <div>
+        <p>Unidade de Taguatinga: (61) 3353-8700</p>
+    </div>
+</div>
+<!--Rodapé da página-->
+<footer class="main-footer">
+    <div class="logo-footer">
+        <img src="img/logoFooter.png" alt="logo senai">
+    </div>     
+        <h3>Vem para o senai</h3>
+    <div class="copy-footer">
+        <i class='bx bx-copyright'></i>
+        <h5>Copyright</h5>
+    </div>    
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

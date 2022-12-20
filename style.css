@@ -1,0 +1,332 @@
+/* Importação da fonte poppins do google*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    --white: #fff;
+    --dark:#1e1c2a;
+    --blue: rgb(0,72,182);
+
+
+}
+
+body{
+    color: var(--dark);
+    background: var(--white);   
+    
+}
+
+/*Barra de navegação*/
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 40px;
+    box-shadow: 0 0.1rem 0.5rem #ccc;
+    width: 100%;
+    background: var(--white);
+    transition: all 0.5s;
+    
+    
+}
+.navbar .logo{
+    color: var(--blue);
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+.navbar ul li a{
+    color: var(--dark);
+    font-size: 17px;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.navbar ul li a:hover{
+    color: var(--blue);
+}
+
+/*Menu*/
+.menu{
+    cursor: pointer;
+    display: none;
+}
+
+.menu .bar{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: var(--dark);
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+.menu .bar:nth-child(1),
+.menu .bar:nth-child(3){
+    background: var(--blue);
+}
+
+.home{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+}
+
+.home-text{
+    max-width: 37rem;
+
+}
+
+.home-text .text-h4{
+    font-size: 1.5rem;
+    color: var(--blue);
+    margin-bottom: 1rem;
+}
+
+.home-text .text-h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    line-height: 4rem;
+    
+}
+
+.home-text p{
+    margin-bottom: 4rem;
+}
+
+.home-btn{
+    padding: 15px 45px;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all 0.5s;
+
+}
+.home-btn:hover{
+    background: #357CE0;
+}
+
+.home-image img{
+    width: 100%;
+}
+
+/*Cards*/
+.unidades-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    border-radius: 5px;
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    padding: 30px;
+    margin: 20px;
+    width: 400px;
+    transition: all 0.3s ease-out;
+    
+  }
+  .card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+  }
+   
+  .card p {
+    color: var(--dark);
+    font-size: 16px;
+  }
+  .card h2{
+    text-align: center;
+    color: var(--blue);
+  }
+  .image {
+    float: right;
+    max-width: 800px;
+    max-height: 100px;
+  }
+
+  
+  /*Seção de pesquisa*/
+  .container{
+    width: 375px; 
+    height: 375px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 4px 4px 30px rgb(0, 0, 0, 0.06);
+    padding: 20px ;
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+    
+}
+
+.container form{
+    width: 100%;
+    border: 1px solid rgb(82, 74, 235);
+    border-radius: 4px;
+    
+}
+
+.container form input{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+
+.t-h2{
+    color: var(--blue);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.lista-produtos{
+    padding: 20px 0;
+}
+
+.produtos{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-bottom: 15px;
+}
+
+.produtos img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.produtos .p-details{
+    padding-left: 15px;
+}
+.produtos .p-details h2{
+    font-size: 20px;
+    color: #1d1d1d;
+}
+
+.produtos .p-details h3{
+    font-size: 20px;
+    color: #1d1d1d;
+}
+
+/*Contatos*/
+.contatos{
+    padding: 80px;
+    
+}
+
+.contatos p{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    padding: 10px;
+}
+
+/*Footer*/
+.main-footer{
+    background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-footer .copy-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: var(--white);
+}
+
+
+@media(max-width: 785px){
+    .navbar{
+        padding: 18px 20px;
+        position: fixed;
+    }
+    .menu{
+        display: block;
+    }
+    .menu.ativo .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .menu.ativo .bar:nth-child(2){
+        opacity: 0;
+    }
+    .menu.ativo .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .nav-menu{
+        position: fixed;
+        right: -100%;
+        top: 70px;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        background: var(--white);
+        gap: -10px;
+        transition: 0.3s;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+    .nav-menu.ativo{
+        right: 0;
+    }
+    /*Main*/
+    .home{
+        padding: 100px;
+        flex-direction: column;
+        text-align: center;
+        overflow: hidden;
+        gap: 0.85rem;
+    }
+    .home .text-h4{
+        font-size: 15px;
+    }
+    .home .text-h1{
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .home p{
+        font-size: 15px;
+    }
+    .home img{
+        
+        width: 100%;
+    }
+/*Cards*/
+    .unidades-card{
+        flex-direction: column;
+    }
+    .unidades-card .card {
+        margin-left: 0;
+        margin-bottom: 32px;
+      }
+}
